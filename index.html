@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Wine.me</title>
+	<meta name="description" content="Wine.me">
+	<meta name="author" content="Nicole Cayouette">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146567963-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146567963-1');
+	</script>
+</head>
+<body>
+	<section class="header">
+		<img class="logo" src="assets/Logo.png" alt="wine.me logo" />
+		<img class="menu" src="assets/Menu.png" alt="menu" />
+	</section>
+	<section class="banner">
+		<h1>Your Food's Favorite Wine</h1>
+		<p>Wine.me pairs your favorite meals with one of our thoroughly researched bottles of wine. Don't know what you want to eat yet, but curious about our selection? Browse the wine selection below to find your new favorite bottle.</p>
+		<button type="button" alt="Sign up">Sign Up</button>
+	</section>
+	<section class="content">
+		<h2>Wine by Type</h2>
+		<div class="list-container">
+			<h3>Reds</h3>
+			<ul class="reds list">
+				<li>
+					<div class="li-display">
+						Pinot Noir
+						<span class="li-subtext">Light-medium body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Merlot
+						<span class="li-subtext">Medium body</span>
+					</div>
+				</li>
+				<li class="">
+					<div class="li-display">
+						Zinfandel
+						<span class="li-subtext">Medium-heavy body</span>
+						<img class="expand-close-icon" src="assets/expand.png" alt="collapse or expand" />
+					</div>
+					
+					<ul class="inner-list hide">
+						<li>
+							<img class="item-img" src="assets/wines/seghesiofamilyvineyards_zinfandel.png" alt="Seghesio Family Vineyards - Old Vine Zinfandel" />
+							<div class="item-description">
+								<p class="brand">
+									Seghesio Family Vineyards,
+									<span class=" location">Sonoma County</span>
+								</p>
+								<h4 class="name">
+									Old Vine Zinfandel
+									<span class="volume">750ML</span>
+								</h4>
+								<p class="rating">
+									<img class="stars" alt="four star rating" src="assets/four-stars.png" />
+									321 ratings
+								</p>
+								<p class="about">
+									In 1895, our great-grandfather, Eduardo Seghesio, planted his first Zinfandel vineyard in Sonoma County at our home rnach in Alexander Valley... 
+									<span class="read-more">Read More</span>
+								</p>
+								<button type="button" alt="see pairings" onclick="gtag('event', click, { 'event_category': 'Button Clicks', 'event_label': 'See Pairings' });">See Pairings</button>
+							</div>
+						</li>
+						<li>
+							<img class="item-img" src="assets/wines/frankfamilyvineyards_zinfandel.png" alt="Frank Family Vineyards - Frank Family Zinfandel" />
+							<div class="item-description">
+								<p class="brand">
+									Frank Family Vineyards,
+									<span class=" location">Nappa Valley</span>
+								</p>
+								<h4 class="name">
+									Frank Family Zinfandel
+									<span class="volume">750ML</span>
+								</h4>
+								<p class="rating">
+									<img class="stars" alt="five star rating" src="assets/five-stars.png" />
+									102 ratings
+								</p>
+								<p class="about">
+									Our 19th-century stone winery is listed on the Register of National Historic Places, and the surrounding elm trees provide a lovely setting for a lazy afternoon... 
+									<span class="read-more">Read More</span>
+								</p>
+								<button type="button" alt="see pairings" onclick="gtag('event', click, { 'event_category': 'Button Clicks', 'event_label': 'See Pairings' });">See Pairings</button>
+							</div>
+						</li>
+						<li>
+							<img class="item-img" src="assets/wines/ravenswood_zinfandel.png" alt="Ravens Wood - Old Vine Zinfandel" />
+							<div class="item-description">
+								<p class="brand">
+									Ravens Wood,
+									<span class=" location">Lodi</span>
+								</p>
+								<h4 class="name">
+									Old Vine Zinfandel
+									<span class="volume">750ML</span>
+								</h4>
+								<p class="rating">
+									<img class="stars" alt="three and a half star rating" src="assets/three-half-stars.png" />
+									94 ratings
+								</p>
+								<p class="about">
+									For over 30 years, wine connoisseurs have trusted Ravenswood to deliver bold, classically crafted wines of exceptional quality and soul. Our Lodi... 
+									<span class="read-more">Read More</span>
+								</p>
+								<button type="button" alt="see pairings" onclick="gtag('event', click, { 'event_category': 'Button Clicks', 'event_label': 'See Pairings' });">See Pairings</button>
+							</div>
+						</li>
+					</ul>
+
+				</li>
+				<li>
+					<div class="li-display">
+						Cabernet Sauvignon
+						<span class="li-subtext">Heavy body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Syrah
+						<span class="li-subtext">Medium-heavy body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Petit Sirah
+						<span class="li-subtext">Heavy body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Sangiovese
+						<span class="li-subtext">Light-medium body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Malbec
+						<span class="li-subtext">Medium body</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="list-container">
+			<h3>Whites</h3>
+			<ul class="whites list">
+				<li>
+					<div class="li-display">
+						Sauvignon Blanc
+						<span class="li-subtext">Light-medium body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Chardonay
+						<span class="li-subtext">Medium-heavy body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Voignier
+						<span class="li-subtext">Medium body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Pinot Grigio
+						<span class="li-subtext">Light body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Pinot Blanc
+						<span class="li-subtext">Medium body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Chenin Blanc
+						<span class="li-subtext">Light body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Gewurztraminer
+						<span class="li-subtext">Medium body</span>
+					</div>
+				</li>
+				<li>
+					<div class="li-display">
+						Riesling
+						<span class="li-subtext">Light body</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
