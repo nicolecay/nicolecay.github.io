@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/* Utilities */
+.hide {
+	display: none !important;
+}
+
+/* Reset */
+html, body, h1, h2, h3, h4, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Common */
+h1, h2, h4, button {
+	font-family: "Georgia", "Times New Roman", serif;
+}
+
+p, h3, li {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	width: 125px;
+	padding: 10px;
+	background-color: #d7206e;
+	color: #fff;
+	font-size: .75em;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active {
+	text-decoration: underline;
+	box-shadow: none;
+}
+
+/* Header - Section */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #ebeff1;
+}
+
+.header img.logo {
+	height: 50px;
+}
+
+.header img.menu {
+    height: 30px;
+    width: 50px;
+}
+
+/* Banner - Section */
+.banner {
+	padding: 40px 20px 60px;
+	background-color: #b12660;
+	color: #fff;
+}
+
+.banner p {
+	margin: 20px 0;
+	font-size: .9em;
+	line-height: 1.5;
+}
+
+/* Content - Section */
+.content {
+	padding: 40px 20px;
+}
+
+/* Content - Lists & List Items */
+.list-container h3 {
+	margin: 40px 0 20px;
+	font-weight: normal;
+}
+
+.list li .li-display {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 15px;
+	font-weight: bold;
+	color: #651638;
+}
+
+.list.reds > li .li-display {
+	background-color: #f1dee6;
+}
+
+.list.whites > li .li-display {
+	background-color: #fcfafc;
+}
+
+.list li .li-display:hover {
+	background-color: #b12660;
+	color: #fff;
+}
+
+.list li .li-display .li-subtext {
+	flex-grow: 1;
+	padding-left: 10px;
+	font-size: .75em;
+	font-weight: normal;
+	color: #724056;
+}
+
+.list li .li-display img.expand-close-icon {
+	width: 15px;
+	height: 15px;
+}
+
+/* List Item - Active */
+.list li.active .li-display {
+	background-color: #b12660;
+	font-weight: bolder;
+	color: #fff;
+}
+
+.list li.active .li-display .li-subtext {
+	font-weight: normal;
+	color: #fff;
+}
+
+.list li.active .li-display img.expand-close-icon {
+	transform: rotate(45deg);
+}
+
+.list {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 99%;
+}
+
+.list > li.active {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+/* List Item - Active - Inner List */
+.inner-list li {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 20% 80%;
+	padding: 20px;
+}
+
+.inner-list li:not(:last-child) {
+	border-bottom: 1px solid #aeaeae;
+}
+
+.inner-list li img.item-img {
+	height: 200px;
+	margin-right: 20px;
+}
+
+.inner-list li .item-description {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-rows: repeat(5, auto);
+	padding-right: 20px;
+}
+
+.item-description .brand,
+.item-description .location,
+.item-description .volume,
+.item-description .about {
+	color: #6b6d6f;
+}
+
+.item-description .brand,
+.item-description .volume,
+.item-description .about {
+	font-size: .75em;
+}
+
+.item-description .volume {
+	font-weight: normal;
+}
+
+.item-description .volume,
+.item-description .read-more {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.item-description .stars {
+	height: 10px;
+	margin-right: 5px;
+}
+
+.item-description .rating {
+	font-size: .5em;
+}
+
+.item-description .rating,
+.item-description .read-more {
+	color: #651638;
+	font-weight: bold;
+}
+
+.item-description .about {
+	font-family: "Georgia", "Times New Roman", serif;
+	line-height: 1.75;
+}
+
+/**** TABLET STYLES */
+@media screen and (min-width: 648px) {
+	.banner p {
+		width: 75%;
+	}
+	
+	.list,
+	.inner-list {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 48.5% 48.5%;
+	}
+
+	.list > li.active {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.inner-list li .item-description {
+		padding-right: 0px;
+	}
+}
+
+/**** DESKTOP STYLES */
+@media screen and (min-width: 948px) {
+	.banner p {
+		width: 60%;
+	}
+	
+	.list,
+	.inner-list {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(3, 33%);
+	}
+
+	.list > li.active {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	
+	.inner-list li:not(:last-child) {
+		border-bottom: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
